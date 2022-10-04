@@ -1,0 +1,32 @@
+
+
+
+### listar all
+GET https://localhost:5001/api/folha/listar
+
+
+### cadastrar folha
+POST https://localhost:5001/api/folha/cadastrar
+Content-Type: application/json 
+
+{
+    "ano" : "2000",
+    "mes" : "12",
+    "cpfFuncionario" : "12312312312",
+    "valorHora" : 15.0,
+    "quantidaDedeHoras" : 10.0,
+    "salarioBruto" : 1000,
+    "impostoRenda" : 5.0,
+    "impostoINSS" : 7.0,
+    "impostoFGTS" : 5.0,
+    "salarioLiquido" : 5.0
+    
+}
+
+###busca por cpf
+GET https://localhost:5001/api/buscar/12312312312/12/1999
+
+
+
+### busca filtro
+GET https://localhost:5001/api/filtar/12/2000
